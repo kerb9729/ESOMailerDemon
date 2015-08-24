@@ -1,0 +1,16 @@
+<GuiXml>
+    <Controls>        
+        <TopLevelControl name="MAILERDEMON_MailConfigPanel" inherits="ZO_RightPanelFootPrint" hidden="true">
+            <OnInitialized>
+                MAILERDEMON_MailConfigPanel_OnInitialized(self)
+				MAILERDEMON_MailerDemonHelpers_OnInitialized(self)
+				MAILERDEMON_MailerDemonData_OnInitialized(self)
+            </OnInitialized>
+            <Controls>
+                <Label name="$(parent)ToLabel" font="ZoFontWinH3" color="INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL" text="TestLABEL">
+                    <Anchor point="TOPLEFT" offsetY="40"/>
+                </Label>
+            </Controls>
+        </TopLevelControl>
+    </Controls>
+</GuiXml>
